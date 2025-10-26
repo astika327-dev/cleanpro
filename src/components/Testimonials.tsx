@@ -67,7 +67,7 @@ export const Testimonials = () => {
               <div className="mb-4">
                 <StarRating rating={testimonial.rating} />
               </div>
-              <p className="text-gray-600 italic mb-6">"{testimonial.review}"</p>
+              <p className="text-gray-600 italic mb-6">&quot;{testimonial.review}&quot;</p>
               <p className="text-right font-bold text-primary">- {testimonial.name}</p>
             </motion.div>
           ))}
