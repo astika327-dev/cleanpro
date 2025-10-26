@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Section */}
           <div className="md:col-span-1">
-            <h3 className="text-2xl font-bold text-primary mb-4">CleanPro</h3>
+            <h3 className="text-2xl font-bold text-primary mb-4">U2CleanPro</h3>
             <p className="text-gray-400">
               Layanan kebersihan profesional yang mengutamakan kualitas, kepercayaan, dan kepuasan pelanggan.
             </p>

@@ -16,6 +16,7 @@ export const ContactForm = () => {
     message: '',
   });
   const [status, setStatus] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { id, value } = e.target;
@@ -24,11 +25,13 @@ export const ContactForm = () => {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    setStatus('Sending...');
+    setIsSubmitting(true);
+    setStatus('Mengirim...');
 
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
       setStatus('Error: Mohon isi semua kolom yang wajib diisi.');
+      setIsSubmitting(false);
       return;
     }
 
@@ -47,6 +50,8 @@ export const ContactForm = () => {
       }
     } catch (error) {
       setStatus('Error: Tidak dapat terhubung ke server.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -133,11 +138,11 @@ export const ContactForm = () => {
             <Textarea id="message" value={formData.message} onChange={handleChange} required />
           </div>
           <div className="text-center">
-            <Button type="submit" size="lg">
-              Kirim Pesan
+            <Button type="submit" size="lg" disabled={isSubmitting}>
+              {isSubmitting ? 'Mengirim...' : 'Kirim Pesan'}
             </Button>
           </div>
-          {status && <p className="mt-4 text-center text-gray-600">{status}</p>}
+          {status && <p className={`mt-4 text-center ${status.startsWith('Error') ? 'text-red-500' : 'text-gray-600'}`}>{status}</p>}
         </motion.form>
       </div>
     </section>

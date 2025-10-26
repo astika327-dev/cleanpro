@@ -38,7 +38,9 @@ export const Navbar = () => {
             ))}
           </nav>
           <div className="hidden md:block">
-             <Button>Dapatkan Penawaran</Button>
+             <Button asChild>
+              <Link href="/contact">Dapatkan Penawaran</Link>
+            </Button>
           </div>
           <div className="md:hidden flex items-center">
             <button
@@ -69,9 +71,11 @@ export const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
-                </Link>
+                </Link> 
               ))}
-              <Button className="w-full">Dapatkan Penawaran</Button>
+              <Button className="w-full" asChild>
+                <Link href="/contact" onClick={() => setIsOpen(false)}>Dapatkan Penawaran</Link>
+              </Button>
             </div>
           </motion.div>
         )}
