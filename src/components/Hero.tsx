@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 
-const heroImageUrl = 'https://i0.wp.com/picjumbo.com/wp-content/uploads/woman-wearing-rubber-protective-gloves-and-holding-spray-detergent-and-rags.jpg?w=600&quality=80';
+const heroImageUrl = '/images/hero-image.jpg';
 
 export const Hero = () => {
   return (
