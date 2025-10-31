@@ -2,7 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { ServicesSection } from "@/components/ServicesSection";
 import { Testimonials } from "@/components/Testimonials";
-import { ContactForm } from "@/components/ContactForm";
+import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <ServicesSection />
       <Testimonials />
-      <ContactForm />
+      <CTA />
       <Footer />
     </main>
   );

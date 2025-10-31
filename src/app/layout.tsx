@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "U2CleanPro - Jasa Kebersihan Profesional",
   description: "Layanan kebersihan profesional untuk rumah, kantor, dan kebutuhan khusus lainnya. Terpercaya dan ramah lingkungan.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
