@@ -3,14 +3,18 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 
-const heroImageUrl = '/images/hero-image.jpg';
-
 export const Hero = () => {
   return (
-    <section
-      className="relative bg-cover bg-center bg-no-repeat h-[60vh] min-h-[400px] flex items-center justify-center text-white"
-      style={{ backgroundImage: `url(${heroImageUrl})` }}
-    >
+    <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-white">
+      <picture>
+        <source media="(max-width: 768px)" srcSet="/images/hero-image-mobile.webp" />
+        <source media="(min-width: 769px)" srcSet="/images/hero-image.webp" />
+        <img
+          src="/images/hero-image.jpg"
+          alt="Tim U2CleanPro sedang membersihkan kantor"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      </picture>
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 text-center px-4">
         <motion.h1

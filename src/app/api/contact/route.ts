@@ -1,15 +1,28 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { z } from 'zod';
+import DOMPurify from 'isomorphic-dompurify';
+
+const contactSchema = z.object({
+  name: z.string().min(2, 'Nama harus lebih dari 2 karakter'),
+  email: z.string().email('Format email tidak valid'),
+  phone: z.string().optional(),
+  service: z.string(),
+  message: z.string().min(10, 'Pesan harus lebih dari 10 karakter'),
+});
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, phone, service, message } = body;
+    const parsedBody = contactSchema.safeParse(body);
 
-    // Basic validation on the server side
-    if (!name || !email || !message) {
-      return NextResponse.json({ message: 'Missing required fields' }, { status: 400 });
+    if (!parsedBody.success) {
+      const { errors } = parsedBody.error;
+      return NextResponse.json({ message: 'Input tidak valid', errors }, { status: 400 });
     }
+
+    const { name, email, phone, service, message } = parsedBody.data;
+    const sanitizedMessage = DOMPurify.sanitize(message);
 
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
@@ -34,7 +47,7 @@ export async function POST(request: Request) {
         <p><strong>Jenis Layanan:</strong> ${service}</p>
         <hr />
         <h3>Pesan:</h3>
-        <p>${message.replace(/\n/g, '<br>')}</p>
+        <p>${sanitizedMessage.replace(/\n/g, '<br>')}</p>
       `,
     };
 
