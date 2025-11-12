@@ -52,7 +52,9 @@ export const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary focus:outline-none"
+              aria-label={isOpen ? 'Tutup menu' : 'Buka menu'}
+              aria-expanded={isOpen}
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
