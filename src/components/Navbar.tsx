@@ -13,6 +13,7 @@ export const Navbar = () => {
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/services', label: 'Layanan' },
+    { href: '/produk', label: 'Produk' },
     { href: '/about', label: 'Tentang' },
     { href: '/testimonials', label: 'Testimoni' },
     { href: '/blog', label: 'Blog' },
