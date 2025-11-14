@@ -7,7 +7,7 @@ const posts = [
   {
     slug: '5-tips-membersihkan-rumah-dengan-cepat',
     title: '5 Tips Membersihkan Rumah dengan Cepat dan Efisien',
-    excerpt: 'Ingin rumah bersih tanpa menghabiskan banyak waktu? Simak 5 tips jitu dari CleanPro untuk membersihkan rumah dengan cepat dan efisien.',
+    excerpt: 'Ingin rumah bersih tanpa menghabiskan banyak waktu? Simak 5 tips jitu dari U2CleanPro untuk membersihkan rumah dengan cepat dan efisien.',
   },
   {
     slug: 'bahan-alami-untuk-membersihkan-dapur',
@@ -17,7 +17,7 @@ const posts = [
   {
     slug: 'jadwal-membersihkan-rumah-harian-mingguan-bulanan',
     title: 'Membuat Jadwal Membersihkan Rumah: Harian, Mingguan, dan Bulanan',
-    excerpt: 'Dengan jadwal yang terorganisir, membersihkan rumah akan menjadi lebih mudah dan tidak memberatkan. Berikut panduan dari CleanPro untuk membuat jadwal kebersihan.',
+    excerpt: 'Dengan jadwal yang terorganisir, membersihkan rumah akan menjadi lebih mudah dan tidak memberatkan. Berikut panduan dari U2CleanPro untuk membuat jadwal kebersihan.',
   },
 ];
 
@@ -26,7 +26,7 @@ export default function BlogPage() {
     <>
       <Navbar />
       <main className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold mb-8 text-center">Blog CleanPro</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">Blog U2CleanPro</h1>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
             <div key={post.slug} className="border rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">

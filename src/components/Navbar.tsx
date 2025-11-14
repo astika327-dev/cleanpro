@@ -27,7 +27,7 @@ export const Navbar = () => {
             <Link href="/">
               <Image
                 src="/logo.svg"
-                alt="CleanPro Logo"
+                alt="U2CleanPro Logo"
                 width={150}
                 height={40}
               />

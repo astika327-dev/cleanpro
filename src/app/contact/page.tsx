@@ -4,8 +4,8 @@ import { Footer } from "@/components/Footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Hubungi Kami - CleanPro",
-    description: "Hubungi CleanPro untuk pertanyaan, penawaran gratis, atau untuk memesan layanan kebersihan profesional kami.",
+    title: "Hubungi Kami - U2CleanPro",
+    description: "Hubungi U2CleanPro untuk pertanyaan, penawaran gratis, atau untuk memesan layanan kebersihan profesional kami.",
 };
 
 export default function ContactPage() {
