@@ -103,11 +103,11 @@ export const Testimonials = () => {
             Kami bangga telah melayani banyak klien dengan hasil yang memuaskan.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {testimonials.slice(0, 3).map((testimonial, index) => (
             <motion.div
               key={testimonial.name}
-              className="bg-gray-50 p-8 rounded-lg shadow-md"
+              className="bg-white p-8 rounded-lg shadow-lg"
               custom={index}
               initial="hidden"
               whileInView="visible"
@@ -117,7 +117,7 @@ export const Testimonials = () => {
               <div className="mb-4">
                 <StarRating rating={testimonial.rating} />
               </div>
-              <p className="text-gray-600 italic mb-6">&quot;{testimonial.review}&quot;</p>
+              <p className="text-gray-700 italic mb-6">&quot;{testimonial.review}&quot;</p>
               <p className="text-right font-bold text-primary">- {testimonial.name}</p>
             </motion.div>
           ))}
