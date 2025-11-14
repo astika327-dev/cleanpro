@@ -6,22 +6,22 @@ import { Star } from 'lucide-react';
 const testimonials = [
   {
     name: 'Andi Pratama',
-    review: 'Pelayanan CleanPro sangat memuaskan! Rumah saya jadi super bersih dan wangi. Timnya profesional dan ramah. Sangat direkomendasikan!',
+    review: 'Pelayanan U2CleanPro sangat memuaskan! Rumah saya jadi super bersih dan wangi. Timnya profesional dan ramah. Sangat direkomendasikan!',
     rating: 5,
   },
   {
     name: 'Citra Lestari',
-    review: 'Kantor kami sekarang jauh lebih nyaman setelah menggunakan jasa CleanPro. Mereka sangat teliti dan hasilnya luar biasa. Terima kasih!',
+    review: 'Kantor kami sekarang jauh lebih nyaman setelah menggunakan jasa U2CleanPro. Mereka sangat teliti dan hasilnya luar biasa. Terima kasih!',
     rating: 5,
   },
   {
     name: 'Budi Santoso',
-    review: 'Pembersihan setelah renovasi rumah benar-benar merepotkan, tapi CleanPro menyelesaikannya dengan cepat dan efisien. Hasilnya bersih total!',
+    review: 'Pembersihan setelah renovasi rumah benar-benar merepotkan, tapi U2CleanPro menyelesaikannya dengan cepat dan efisien. Hasilnya bersih total!',
     rating: 4,
   },
   {
     name: 'Dewi Anggraini',
-    review: 'Saya sangat terkesan dengan tingkat kebersihan yang diberikan CleanPro. Apartemen saya terlihat seperti baru lagi. Pasti akan menggunakan jasa mereka lagi.',
+    review: 'Saya sangat terkesan dengan tingkat kebersihan yang diberikan U2CleanPro. Apartemen saya terlihat seperti baru lagi. Pasti akan menggunakan jasa mereka lagi.',
     rating: 5,
   },
   {
@@ -41,7 +41,7 @@ const testimonials = [
   },
   {
     name: 'Fitri Handayani',
-    review: 'Sebagai ibu rumah tangga, saya sangat terbantu dengan adanya CleanPro. Mereka membantu saya membersihkan rumah mingguan. Hasilnya selalu konsisten dan memuaskan.',
+    review: 'Sebagai ibu rumah tangga, saya sangat terbantu dengan adanya U2CleanPro. Mereka membantu saya membersihkan rumah mingguan. Hasilnya selalu konsisten dan memuaskan.',
     rating: 5,
   },
   {
@@ -51,7 +51,7 @@ const testimonials = [
   },
   {
     name: 'Maya Sari',
-    review: 'Villa kami di Bali selalu siap menerima tamu berkat CleanPro. Mereka menjaga kebersihan villa dengan sangat baik. Tamu kami selalu senang.',
+    review: 'Villa kami di Bali selalu siap menerima tamu berkat U2CleanPro. Mereka menjaga kebersihan villa dengan sangat baik. Tamu kami selalu senang.',
     rating: 5,
   },
   {

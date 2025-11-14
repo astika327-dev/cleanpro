@@ -27,10 +27,10 @@ export const AboutSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-            Tentang CleanPro
+              Tentang U2CleanPro
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            CleanPro didirikan dengan misi untuk menyediakan layanan kebersihan berkualitas tinggi yang dapat diandalkan oleh setiap rumah dan bisnis. Kami percaya bahwa lingkungan yang bersih adalah kunci untuk kehidupan yang sehat dan produktif.
+              U2CleanPro didirikan dengan misi untuk menyediakan layanan kebersihan berkualitas tinggi yang dapat diandalkan oleh setiap rumah dan bisnis. Kami percaya bahwa lingkungan yang bersih adalah kunci untuk kehidupan yang sehat dan produktif.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

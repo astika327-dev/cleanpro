@@ -7,7 +7,7 @@ const posts: { [key: string]: { title: string; content: string } } = {
   '5-tips-membersihkan-rumah-dengan-cepat': {
     title: '5 Tips Membersihkan Rumah dengan Cepat dan Efisien',
     content: `
-      <p>Membersihkan rumah seringkali terasa seperti tugas yang tak ada habisnya. Namun, dengan strategi yang tepat, Anda bisa melakukannya dengan lebih cepat dan efisien. Berikut adalah 5 tips dari CleanPro:</p>
+      <p>Membersihkan rumah seringkali terasa seperti tugas yang tak ada habisnya. Namun, dengan strategi yang tepat, Anda bisa melakukannya dengan lebih cepat dan efisien. Berikut adalah 5 tips dari U2CleanPro:</p>
       <ol>
         <li><strong>Buat Rencana:</strong> Tentukan ruangan mana yang akan dibersihkan terlebih dahulu dan apa saja yang perlu dilakukan.</li>
         <li><strong>Gunakan Alat yang Tepat:</strong> Pastikan Anda memiliki semua peralatan kebersihan yang dibutuhkan sebelum memulai.</li>
