@@ -17,7 +17,7 @@ export async function POST(request: Request) {
     const parsedBody = contactSchema.safeParse(body);
 
     if (!parsedBody.success) {
-      const { errors } = parsedBody.error;
+      const errors = parsedBody.error.flatten().fieldErrors;
       return NextResponse.json({ message: 'Input tidak valid', errors }, { status: 400 });
     }
 
