@@ -12,9 +12,7 @@ export default function ContactPage() {
   return (
     <main>
       <Navbar />
-      <div className="pt-16">
-        <ContactForm />
-      </div>
+      <ContactForm />
       <Footer />
     </main>
   );

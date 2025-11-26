@@ -12,9 +12,7 @@ export default function AboutPage() {
   return (
     <main>
       <Navbar />
-      <div className="pt-16">
-        <AboutSection />
-      </div>
+      <AboutSection />
       <Footer />
     </main>
   );

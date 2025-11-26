@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Testimonials } from "@/components/Testimonials";
 import { Footer } from "@/components/Footer";
+import { CTA } from "@/components/CTA";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,9 +13,8 @@ export default function TestimonialsPage() {
   return (
     <main>
       <Navbar />
-      <div className="pt-16">
-        <Testimonials />
-      </div>
+      <Testimonials />
+      <CTA />
       <Footer />
     </main>
   );

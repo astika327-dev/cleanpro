@@ -21,9 +21,8 @@ export const ProductCard = ({ product }: ProductCardProps) => {
         <Image
           src={product.imageUrl}
           alt={product.name}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-t-lg"
+          fill
+          className="rounded-t-lg object-cover"
         />
       </div>
       <h3 className="text-lg font-bold mb-2">{product.name}</h3>
